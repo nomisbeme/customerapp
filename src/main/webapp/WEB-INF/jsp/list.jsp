@@ -59,12 +59,12 @@
                         <label for="lastName">Last name</label>
                         <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last...">
                     </div>
-                    <!-- -->
+                    <!--
                     <div class="form-group">
                             <label for="email">Email</label>
                             <input type="email" class="form-control" name="email" id="email" placeholder="...@company.com">
                     </div>
-                    <!-- -->
+                    -->
                     <input type='submit' class='btn btn-primary' value='Add'>
                 </form>
             </span>
