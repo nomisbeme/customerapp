@@ -1,6 +1,6 @@
 # Summary
 
-A simple customer database for a ficticious company. Kubernetes + Java backed by MongoDB. 
+A simple customer database for a fictitious company. Kubernetes + Java backed by MongoDB. 
 Makes heavy use of Microsoft managed services to keep things easy.
 Traffic to/from the application is secured using TLS.
 
