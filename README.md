@@ -99,3 +99,4 @@ helm upgrade --set image.tag=fixed capp helm/customerapp
 * Use Open Service Catalog for Azure to expose Cosmos within the Kubernetes cluster
 * Use the Spotify maven plugins to simplify container image creation
 * Use a private registry e.g. Azure Container Registry to avoid making application code publicly available.
+* Replace kube-lego with the more modern replacement cert-manager
