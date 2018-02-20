@@ -1,0 +1,6 @@
+spring.mvc.view.prefix: /WEB-INF/jsp/
+spring.mvc.view.suffix: .jsp
+
+#spring.data.mongodb.uri: mongodb://localhost:27017/mongodb
+spring.data.mongodb.uri: ${MONGODB_URI}
+spring.data.mongodb.database: test
