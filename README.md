@@ -65,7 +65,7 @@ This creates an file `target/customerapp-0.1.2.war` that contains our applicatio
 docker build -t nomisbeme/customerapp:0.1.2 .
 docker push nomisbeme/customerapp:0.1.2
 ```
-8. We then use the Kubernetes package manager to deploy the resulting application to Kubernetes:
+8. Use the Kubernetes package manager, helm, to deploy the resulting application to Kubernetes.
 ```
 helm install helm/customerapp/ -n capp
 ```
