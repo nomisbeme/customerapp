@@ -4,7 +4,7 @@
 replicaCount: 3
 image:
   repository: nomisbeme/customerapp
-  tag: 0.1.2
+  tag: 4.0.0
   pullPolicy: IfNotPresent
 service:
   name: http
