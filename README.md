@@ -1,6 +1,6 @@
 # Summary
 
-A simple customer database for a ficticious company. Kubernetes + Java backed by MongoDB. 
+A simple customer database for a fictitious company. Kubernetes + Java backed by MongoDB. 
 Makes heavy use of Microsoft managed services to keep things easy.
 Traffic to/from the application is secured using TLS.
 
@@ -65,7 +65,7 @@ This creates an file `target/customerapp-0.1.2.war` that contains our applicatio
 docker build -t nomisbeme/customerapp:0.1.2 .
 docker push nomisbeme/customerapp:0.1.2
 ```
-8. We then use the Kubernetes package manager to deploy the resulting application to Kubernetes:
+8. Use the Kubernetes package manager, helm, to deploy the resulting application to Kubernetes.
 ```
 helm install helm/customerapp/ -n capp
 ```
@@ -99,3 +99,4 @@ helm upgrade --set image.tag=fixed capp helm/customerapp
 * Use Open Service Catalog for Azure to expose Cosmos within the Kubernetes cluster
 * Use the Spotify maven plugins to simplify container image creation
 * Use a private registry e.g. Azure Container Registry to avoid making application code publicly available.
+* Replace kube-lego with the more modern replacement cert-manager
