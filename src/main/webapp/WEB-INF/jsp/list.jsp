@@ -50,7 +50,7 @@
                 </table>
             </div>
             <span class='border'>      
-                <form action='/new'>
+                <form action='new'>
                     <div class="form-group">
                         <label for="firstName">First name</label>
                         <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First...">

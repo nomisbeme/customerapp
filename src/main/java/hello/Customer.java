@@ -1,12 +1,16 @@
 package hello;
 
-import org.springframework.data.annotation.Id;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Entity;
 
-
+@javax.persistence.Entity
 public class Customer {
 
     @Id
-    public String id;
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    public Integer id;
 
     public String firstName;
     public String lastName;
@@ -27,7 +31,7 @@ public class Customer {
     @Override
     public String toString() {
         return String.format(
-                "Customer[id=%s, firstName='%s', lastName='%s', email='%s']",
+                "Customer[id=%i, firstName='%s', lastName='%s', email='%s']",
                 id, firstName, lastName, email);
     }
     
