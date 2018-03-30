@@ -5,7 +5,7 @@
 
     <groupId>org.springframework</groupId>
     <artifactId>customerapp</artifactId>
-    <version>0.1.2</version>
+    <version>1.0.0</version>
     <packaging>war</packaging>
 
     <parent>
